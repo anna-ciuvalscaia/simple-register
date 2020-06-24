@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creaza Cont</title>
+</head>
+<body bgcolor="#E1CA92">
+    <br>
+    <br>
+    <br>
+    <form action="thankyou.html">
+<table bgcolor="white" align="center" cellpadding="10">
+    <tr>
+        <td align="center"><img src="images/person-icon.png" alt="user"></td>
+        <th>Creaza cont</th>
+    </tr>
+    <tr>
+        <th>Nume</th>
+        <td>
+            <input type="text" placeholder="de ex. Sirbu" required pattern=".{3,}"title="Preumele trebuie sa contina mai mult de 3 caractere">
+        </td>
+    </tr>
+    <tr>
+        <th>Prenume</th>
+        <td>
+            <input type="text" placeholder="de ex. Ana" required pattern=".{3,}"title="Numele trebuie sa contina mai mult de 3 caractere" >
+        </td>
+    </tr>
+    <tr>
+        <th>Descriere /pe scurt</th>
+        <td>
+<textarea placeholder="de ex. Am absolvit liceul...." cols="22" rows="10"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <fieldset>
+                <legend>Date de contact:</legend>
+                <label>Localitatea:</label>
+                <select>
+                    <option>Chisinau</option>
+                    <option>Balti</option>
+                    <option>Orhei</option>
+                </select>
+                <br>
+                <br>
+                
+                <label>Adresa:</label>
+               <textarea  cols="30" rows="2" placeholder="de ex. str. Alba Iulia 202, ap.10"></textarea>
+               <br>
+               <br>
+
+               <label for="email">e-mail:</label>
+               <input type="email" placeholder="ex. albert12@gmail.com">
+               <br>
+               <br>
+               <label for="phone">telefon:</label>
+               <input type="tel" id="phone" name="phone" placeholder="ex. +373-xxxx-xxxx">
+            </fieldset>
+
+        </td>
+    </tr>
+    <tr>
+        <th>Parola</th>
+        <td>
+        <input type="password" required pattern=".{8,}"title="Parola trebuie sa contina mai mult de 8 caractere" >
+        </td>
+    </tr>
+    <tr>
+        <th colspan="2">
+            <input type="checkbox" required>
+            Am citit si sunt de acord <br> cu <a href="terms.html" target="_blank">termenii si conditiile!</a>
+        </th>
+    </tr>
+    <tr>
+        <td align="center" colspan="2"><button>SALVEAZA</button></td>
+        
+    </tr>
+   
+</table>
+
+    </form>
+    
+</body>
+</html>
